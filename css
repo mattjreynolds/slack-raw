@@ -14,6 +14,12 @@ body {
   font-family: 'Muli', sans-serif !important;
 }
 */
+
+* {
+    color: white;
+    background-color: #222222 !important;
+}
+
 div.c-message.c-message--light.c-message--hover {
     color: grey !important;
 }
