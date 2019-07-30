@@ -8,6 +8,18 @@ body {
 .p-member_directory__search_filter_container{
  background-color: #1a1a1a !important;
 }
+.p-message_pane_input__disabled {
+    background-color: #151515;
+    color: rgba(255, 255, 255, 0.7);
+    }
+.p-team_sidebar__add_button {
+    background: rgb(31, 39, 27);
+    border-color: rgba(61, 158, 85, 0.3);}
+    .p-team_sidebar__add_button:hover, .p-team_sidebar__add_button:focus, .p-team_sidebar__add_button:active {
+    border-color: #FFFFFF;
+    background: rgb(0, 0, 0);
+    box-shadow: 0 0 0 3px rgb(87, 226, 117), 0 0 0 6px rgba(255,255,255,0.3);}
+
 .p-member_directory__member_row {
     background-color: #1a1a1a !important;
     border-bottom: 1px solid #000 !important;}
@@ -17,12 +29,18 @@ body {
  .CodeMirror-cursor {
     border-left-color: rgba(255,255,255,1) !important;
   }
+  .p-team_sidebar, .p-team_sidebar--frameless::before {
+    background: rgb(14, 14, 14)!important;
+}
   .p-call_subtype{
   border: 1px solid #000 !important;
     background-color: #3f3f3f !important;}
  .CodeMirror-selected {
     background-color: #60609F !important;
   }
+  .p-channel_sidebar__channel:hover, .p-channel_sidebar__link:hover, .p-channel_sidebar__close_container:hover {
+    background: #313131 !important;
+}
   .c-button--outline-primary {
     transition: all 80ms linear;
     background: #3b3b3b !important;
@@ -502,10 +520,17 @@ p-search_filter__date:first-child {
     color: white;
 }
 .c-message--light .c-message__sender .c-message__sender_link {
-    color: #a4d677 !important;
+
     font-weight: 700 !important;
     font-size: 14px !important;
 }
+
+.c-message--light .c-message__sender .c-message__sender_link{
+ color: #a4d677 !important;
+}
+
+
+
 .light_theme ts-message .message_content .message_sender {
     color:  #a4d677 !important;
     text-transform: capitalize;
@@ -536,7 +561,7 @@ p-search_filter__date:first-child {
 .p-channel_sidebar__section_heading_label--clickable:hover,
 .p-channel_sidebar__section_heading_label--unreads,
 .p-channel_sidebar__quickswitcher:hover {
-    color: white !importnat;
+    color: white !important;
 }
 .p-download_item__actions{
     background:none;
@@ -981,9 +1006,10 @@ color:#a4d677 !important
             background: black !important;
             color: #ffffff !important;
         }
-        a.c-message__sender_link{
-            color: #a4d677 !important;
-        }
+     
+         a.c-message__sender_link{
+            color: #a4d677 !important ;
+       }
         .ql-editor[aria-label]{
             color: white !important;
         }
